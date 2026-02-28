@@ -12,7 +12,7 @@ elif operador == '/':
     print(number_1 / number_2)
 else:
     print('Operação Inválida')
-time.sleep(5)       
+time.sleep(15)       
 
 
     
