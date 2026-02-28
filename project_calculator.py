@@ -1,24 +1,29 @@
 from time import sleep
-def calculadora(number_1, number_2, operador):
-    if operador == '+':
-        return number_1 + number_2 
-    elif operador == '-':
-        return number_1 - number_2
-    elif operador == '*':
-        return number_1 * number_2
-    elif operador == '/':
-        if number_2 != 0:
-            return number_1 / number_2
-        else:
-            return 'Erro por divisão 0!'
-    else:
-        return('Operação Inválida')
+def soma(number_1, number_2):
+    return number_1 + number_2
+def subtracao(number_1, number_2):
+    return number_1 - number_2
+def multiplicacao(number_1, number_2):
+    return number_1 * number_2
+def divisao(number_1, number_2):
+    return number_1 / number_2
+
+
 number_1 = float(input('Digite o primeiro número: '))
 number_2 = float(input('Digite o próximo número: '))
-operador = str(input(f'Qual operador você deseja? (+, -, * ou /) '))
-resultado = calculadora(number_1, number_2, operador)
-print(resultado)
-sleep(5)       
+operador = input('Qual operador deseja utilizar? (+, -, * ou/)')
+operaçoes = {'+': soma,
+                     '-': subtracao,
+                     '*': multiplicacao,
+                     '/': divisao}
+
+funcao = operaçoes.get(operador)
+if funcao: 
+    resultado = funcao(number_1, number_2)
+    print(resultado)
+else:
+    print('Operação Inválida')
+sleep(5)     
 
 
     
