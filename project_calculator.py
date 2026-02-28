@@ -1,4 +1,4 @@
-import time
+from time import sleep
 def calculadora(number_1, number_2, operador):
     if operador == '+':
         return(number_1 + number_2)
@@ -18,7 +18,7 @@ number_2 = float(input('Digite o próximo número: '))
 operador = str(input(f'Qual operador você deseja? '))
 resultado = calculadora(number_1, number_2, operador)
 print(resultado)
-time.sleep(5)       
+sleep(5)       
 
 
     
