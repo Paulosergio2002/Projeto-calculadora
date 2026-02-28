@@ -13,9 +13,9 @@ number_1 = float(input('Digite o primeiro número: '))
 number_2 = float(input('Digite o próximo número: '))
 operador = input('Qual operador deseja utilizar? (+, -, * ou/)')
 operaçoes = {'+': soma,
-                     '-': subtracao,
-                     '*': multiplicacao,
-                     '/': divisao}
+             '-': subtracao,
+            '*': multiplicacao,
+             '/': divisao}
 
 funcao = operaçoes.get(operador)
 if funcao: 
