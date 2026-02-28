@@ -1,14 +1,14 @@
 from time import sleep
 def calculadora(number_1, number_2, operador):
     if operador == '+':
-        return(number_1 + number_2)
+        return number_1 + number_2 
     elif operador == '-':
-        return(number_1 - number_2)
+        return number_1 - number_2
     elif operador == '*':
-        return(number_1 * number_2)
+        return number_1 * number_2
     elif operador == '/':
         if number_2 != 0:
-            return(number_1 / number_2)
+            return number_1 / number_2
         else:
             return 'Erro por divisão 0!'
     else:
