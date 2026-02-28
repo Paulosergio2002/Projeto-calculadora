@@ -15,7 +15,7 @@ def calculadora(number_1, number_2, operador):
         return('Operação Inválida')
 number_1 = float(input('Digite o primeiro número: '))
 number_2 = float(input('Digite o próximo número: '))
-operador = str(input(f'Qual operador você deseja? '))
+operador = str(input(f'Qual operador você deseja? (+, -, * ou /) '))
 resultado = calculadora(number_1, number_2, operador)
 print(resultado)
 sleep(5)       
