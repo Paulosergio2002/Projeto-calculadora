@@ -6,7 +6,7 @@ def subtracao(number_1, number_2):
 def multiplicacao(number_1, number_2):
     return number_1 * number_2
 def divisao(number_1, number_2):
-    if number_2 == 0
+    if number_2 == 0: 
         print('Erro: divisão 0')
     return number_1 / number_2
 
