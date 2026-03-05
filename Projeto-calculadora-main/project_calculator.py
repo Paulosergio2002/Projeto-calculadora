@@ -25,7 +25,7 @@ if funcao:
     print(resultado)
 else:
     print('Operação Inválida')
-sleep(5)     
+sleep(10)     
 
 
     
